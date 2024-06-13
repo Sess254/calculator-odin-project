@@ -58,6 +58,7 @@ button:active {
     background-color: hsl(0, 0%, 40%);
     color: antiquewhite;
     font-size: 3rem;
+    padding: 0 20px 0 20px ;
 
 }
 
