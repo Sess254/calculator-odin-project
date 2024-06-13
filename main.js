@@ -1,6 +1,14 @@
 const display = document.getElementById('display')
 
 
-function appendToDisplay(){
-    display.input += input
+function appendToDisplay(input){
+    display.value += input
+}
+
+function clearDisplay() {
+    display.value = ''
+}
+
+function getCalculation(){
+    display.value = eval(display.value)
 }
