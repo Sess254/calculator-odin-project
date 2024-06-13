@@ -1,12 +1,17 @@
+/* typography */
 body {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     background-color: black;
+    font-family: "Roboto", sans-serif;
 }
 
+
+header {
+    color: antiquewhite;
+    text-align: center;
+}
+
+/* Buttons */
 button{
     width: 100px;
     height: 100px;
@@ -43,13 +48,15 @@ button:active {
     padding: 25px;
 }
 
+/* layout */
+
 .calculator {
     max-width: 500px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 15px;
     background-color: hsl(0, 0%, 15%);
     overflow: hidden;
     border: none;
+    margin: 0 auto;
 }
 
 .display {
