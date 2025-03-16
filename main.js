@@ -1,20 +1,23 @@
-const display = document.getElementById('display')
+// append number to the screen
+
+// appedn operator to the screen
+
+// append second number to the screen
+
+let currentNumber = "";
+let previousNumber = "";
+let currentOperand = "";
 
 
-function appendToDisplay(input){
-    display.value += input
+
+const display = document.querySelector('.display');
+
+function appendToDisplay(number) {
+    currentNumber += number;
+    display.value = `${previousNumber}  ${currentOperand} ${currentNumber}`;
+
 }
 
-function clearDisplay() {
-    display.value = ''
-}
-
-function getCalculation(){
-    try {
-        display.value = eval(display.value)
-    }
-    catch(error){
-        display.value = `Syntax Error`
-    }
-    
+function getCalculation() {
+    console.log("calcultaing")
 }
