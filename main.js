@@ -1,27 +1,29 @@
-// append number to the screen
-
-// appedn operator to the screen
-
+// append current number to the screen
+// append operator to the screen
+// change the current num to prev num and if prev num isnt empty do calculation
 // append second number to the screen
+// display results
+
+// bug cant clear dom when starting new calculation without using clear button
+
 
 const display = document.querySelector('.display');
 
 
 let currentNumber = "";
 let previousNumber = "";
-let currentOperator = "";
-let isResult = false;
+let currentOperator = ""
 
 
 
 
 function appendNumberToDisplay(number) {
     currentNumber += number;
-    display.value = `${previousNumber} ${currentOperator} ${currentNumber}`;
+    display.value = `${previousNumber}${currentOperator}${currentNumber}`;
 
 }
 
-function appendOperandToDisplay(operator) {
+function appendOperatorToDisplay(operator) {
     if (currentNumber === "") return;
     if (previousNumber !== "") {
         getCalculation();
@@ -29,7 +31,7 @@ function appendOperandToDisplay(operator) {
     currentOperator = operator;
     previousNumber = currentNumber;
     currentNumber = "";
-    display.value = `${previousNumber} ${currentOperator}`;
+    display.value = `${previousNumber}${currentOperator}`;
 }
 
 function getCalculation() {
