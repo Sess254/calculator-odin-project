@@ -18,21 +18,21 @@
             <div class="calculator">
                 <label for="display"><input id="display" class="display" readonly></label>
                 <div class="keys">
-                    <button class="operand-btn" onclick="appendToDisplay('+')">+</button>
-                    <button onclick="appendToDisplay('7')">7</button>
-                    <button onclick="appendToDisplay('8')">8</button>
-                    <button onclick="appendToDisplay('9')">9</button>
-                    <button class="operand-btn" onclick="appendToDisplay('-')">-</button>
-                    <button onclick="appendToDisplay('4')">4</button>
-                    <button onclick="appendToDisplay('5')">5</button>
-                    <button onclick="appendToDisplay('6')">6</button>
-                    <button class="operand-btn" onclick="appendToDisplay('*')">*</button>
-                    <button onclick="appendToDisplay('1')">1</button>
-                    <button onclick="appendToDisplay('2')">2</button>
-                    <button onclick="appendToDisplay('3')">3</button>
-                    <button class="operand-btn" onclick="appendToDisplay('/')">/</button>
-                    <button onclick="appendToDisplay('0')">0</button>
-                    <button onclick="appendToDisplay('.')">.</button>
+                    <button class="operand-btn" onclick="appendOperandToDisplay('+')">+</button>
+                    <button onclick="appendNumberToDisplay('7')">7</button>
+                    <button onclick="appendNumberToDisplay('8')">8</button>
+                    <button onclick="appendNumberToDisplay('9')">9</button>
+                    <button class="operand-btn" onclick="appendOperandToDisplay('-')">-</button>
+                    <button onclick="appendNumberToDisplay('4')">4</button>
+                    <button onclick="appendNumberToDisplay('5')">5</button>
+                    <button onclick="appendNumberToDisplay('6')">6</button>
+                    <button class="operand-btn" onclick="appendOperandToDisplay('x')">x</button>
+                    <button onclick="appendNumberToDisplay('1')">1</button>
+                    <button onclick="appendNumberToDisplay('2')">2</button>
+                    <button onclick="appendNumberToDisplay('3')">3</button>
+                    <button class="operand-btn" onclick="appendOperandToDisplay('/')">/</button>
+                    <button onclick="appendNumberToDisplay('0')">0</button>
+                    <button onclick="appendNumberToDisplay('.')">.</button>
                     <button class="calculate-btn" onclick="getCalculation('=')">=</button>
                     <button class="operand-btn" onclick="clearDisplay('C')">C</button>
                 </div>
